@@ -7,6 +7,14 @@
     <title>flow root</title>
 
     <style>
+        @supports not (display: flow-root) {
+            .box::after {
+                content: ' ';
+                clear: both;
+                display: block;
+            }
+        }
+
         .box {
             width: 50vw;
             border: .5rem solid salmon;
