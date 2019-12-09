@@ -1,0 +1,26 @@
+@mixin flex-box($attribute: "", $value: "") {
+    display: flex;
+
+    #{$attribute}: #{$value};
+}
+
+@mixin flex-center-v {
+    @include flex-box('align-items', 'center');
+}
+
+.d-flex {
+    @include flex-box();
+}
+
+.d-flex-center-v {
+    @include flex-center-v();
+}
+
+// or maybe we can just 
+
+.d-flex-center-v-another {
+    @include flex-box('align-items', 'center');
+}
+
+// which one is better???
+// OH MY GOD...😱😭😱😱😭😱

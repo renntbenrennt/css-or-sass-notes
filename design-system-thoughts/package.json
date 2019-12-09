@@ -1,0 +1,23 @@
+{
+  "name": "design-system-thoughts",
+  "version": "1.0.0",
+  "description": "A place to collect those thoughts that belong to system architect",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "\"design",
+    "system\"",
+    "\"sass\""
+  ],
+  "author": "Benjamin",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^9.7.3",
+    "gulp": "^4.0.2",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5"
+  }
+}
