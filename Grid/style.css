@@ -1,0 +1,43 @@
+.container {
+  background-color: azure;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: .5rem;
+  grid-template-areas: "start-of-the-day surviving go-to-bed" "surviving-of-the-day the-goal reminding-yourself" "why-you-are-here hang-in-there you-will-be-fine";
+  justify-items: center;
+  -webkit-box-align: center;
+          align-items: center;
+  width: 1240px;
+  height: 800px;
+  margin: 0 auto;
+  grid-template-columns: repeat(3, 200px);
+  grid-template-rows: repeat(3, 100px);
+  justify-content: space-around;
+  align-content: center; }
+
+.cell {
+  width: 50px;
+  height: 50px; }
+  .cell:nth-of-type(1) {
+    background-color: salmon;
+    grid-area: start-of-the-day;
+    justify-self: baseline; }
+  .cell:nth-of-type(2) {
+    background-color: turquoise;
+    grid-area: surviving;
+    align-self: end; }
+  .cell:nth-of-type(3) {
+    background-color: teal;
+    grid-area: go-to-bed; }
+  .cell:nth-of-type(4) {
+    background-color: skyblue;
+    grid-area: surviving-of-the-day; }
+  .cell:nth-of-type(5) {
+    background-color: yellow;
+    grid-area: the-goal; }
+  .cell:nth-of-type(6) {
+    background-color: wheat;
+    grid-area: you-will-be-fine; }
+
+/*# sourceMappingURL=style.css.map */
