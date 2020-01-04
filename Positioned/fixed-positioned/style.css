@@ -1,0 +1,51 @@
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    min-height: 200vh;
+    margin: 0;
+}
+
+button {
+    padding: .5em .7em;
+    border: 1px solid #8d8d8d;
+    background-color: white;
+    font-size: 1em;
+}
+
+.top-banner {
+    padding: 1em 0;
+    background-color: #ffd698;
+}
+
+.top-banner-inner {
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.modal {
+    display: none;
+}
+
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.modal-body {
+    position: fixed;
+    top: 3em;
+    bottom: 3em;
+    right: 20%;
+    left: 20%;
+    padding: 2em 3em;
+    background-color: white;
+    overflow: auto;
+}
+
+.modal-close {
+    cursor: pointer;
+}
