@@ -75,6 +75,22 @@ button {
     width: 80%;
     max-width: 1000px;
     margin: 1em auto;
+    display: flex;
+    min-height: 100vh;
+}
+
+.col-main {
+    flex: 1 80%;
+}
+
+.col-sidebar {
+    flex: 20%;
+}
+
+.affix {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 1em;
 }
 
 .dropdown {
