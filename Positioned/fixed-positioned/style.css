@@ -81,9 +81,23 @@ button {
 }
 
 .dropdown-label {
-    padding: .5em 1.5em;
+    padding: .5em 2em .5em 1.5em;
     border: 1px solid #ccc;
     background-color: #eee;
+}
+
+.dropdown-label::after {
+    content: "";
+    position: absolute;
+    right: 1em;
+    top: 1em;
+    border: .3em solid;
+    border-color: black transparent transparent;
+}
+
+.dropdown:hover .dropdown-label::after {
+    top: .7em;
+    border-color: transparent transparent black;
 }
 
 .dropdown-menu {
