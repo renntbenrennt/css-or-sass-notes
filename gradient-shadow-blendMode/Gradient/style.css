@@ -1,0 +1,47 @@
+.fade {
+    height: 200px;
+    width: 400px;
+    /* 
+        the simplest form of gradient
+        angle, starting color, ending color
+    */
+    background-image: linear-gradient(to right, white, blue);
+
+    /* we can also have angle value specify to the corner */
+    background-image: linear-gradient(to right bottom, white, blue);
+
+    /* 
+        as for angle, to right is same as 90deg
+    */
+    background-image: linear-gradient(90deg, white, blue);
+
+    /* we can have color stop like this */
+    background-image: linear-gradient(90deg, red, white, blue);
+
+    /* we can explicitly set the portion of these color stops, below is as same as above */
+    background-image: linear-gradient(90deg, red 0%, white 50%, blue 100%);
+
+    /* 
+        If we place two color stops at the same position, 
+        the gradient's color will instantly switch from one to other,
+        rather than a smooth transition,
+        which will turn the gradient to stripe look.
+    */
+    background-image: linear-gradient(90deg,
+    red 40%, white 40%,
+    white 60%, blue 60% );
+
+    /* 
+        the above stripe look can combine with repeat gradient function
+        to create a progress bar
+    */
+    height: 1em;
+    border-radius: .3em;
+    background-image: repeating-linear-gradient(-45deg,
+    #57b, #57b 10px, #148 10px, #148 20px);
+
+    /* 
+        for more, checkout 
+        https://css-tricks.com/stripes-css/
+    */
+}
