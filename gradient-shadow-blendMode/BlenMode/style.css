@@ -1,0 +1,54 @@
+div + div {
+    margin-top: 21px;
+}
+
+.blend {
+    min-height: 400px;
+    background-image: url(images/bear.jpg), url(images/bear.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: -30vw, 30vw;
+
+    /* 
+        Just checkout this in the browser,
+        words are too cheap to describe
+    */
+    background-blend-mode: multiply;
+}
+
+.tint {
+    background-image: url(images/bear.jpg);
+    background-color: #148;
+    background-position: center;
+    background-blend-mode: luminosity;
+}
+
+.texture {
+    background-image: url(images/scratches.png), url(images/bear.jpg);
+    background-size: 200px, cover;
+    background-repeat: repeat, no-repeat;
+    background-position: center center;
+    background-blend-mode: soft-light;
+}
+
+.tx {
+    background-image: url(images/bear.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 5em 0 10em;
+    min-height: unset;
+    background-repeat: unset;
+    background-blend-mode: unset;
+}
+
+.tx > h1 {
+    margin: 0;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 6rem;
+    text-align: center;
+    mix-blend-mode: hard-light;
+    background-color: #c33;
+    color: #808080;
+    border: .1em solid #ccc;
+    border-width: .1em 0;
+}
